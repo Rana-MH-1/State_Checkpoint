@@ -11,6 +11,7 @@ export class App extends Component {
         Bio: 'I am a biological enginner and a full stack student.I have worked as a Quality Manager for 11 months and I am studying now web development because I am passionate about it.' ,
         SrcImg : './profileimage.jpg' ,
         Show: false,
+        button: 'show profile',
         date: 0
     }
   }
@@ -48,7 +49,7 @@ export class App extends Component {
       )}
       
       <br/> <br/>
-      <button onClick={this.isToggle}>Show profile</button>
+      <button onClick={this.isToggle}>{Show?'hide profile': this.state.button}</button>
       <p className='Time'> The last component was mounted since {this.state.date} seconds</p>
 
   </div>
